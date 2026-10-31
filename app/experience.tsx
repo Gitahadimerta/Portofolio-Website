@@ -17,6 +17,7 @@ interface ExperienceItem {
 }
 
 const experiences = ([
+
   {
     id: 1,
     company: "Tim PKM-GFT FTK Undiksha",
@@ -65,7 +66,7 @@ const experiences = ([
     year: 2024,
     skills: ["leadership", "publication", "documentation"],
   },
-] satisfies ExperienceItem[]).sort((a, b) => b.year - a.year || a.id - b.id)
+] satisfies ExperienceItem[]).map((exp) => exp as ExperienceItem).sort((a, b) => b.year - a.year || a.id - b.id)
 
 export default function Experience() {
   const { t } = useLanguage()
