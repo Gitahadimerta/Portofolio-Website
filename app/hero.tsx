@@ -63,6 +63,9 @@ export default function Hero() {
             <a href="mailto:ketutgita04@gmail.com" className="cursor-pointer text-sm md:text-base font-bold border-2 border-text-secondary/20 hover:border-text-primary text-text-primary px-8 py-4 rounded-xl flex items-center justify-center gap-3 hover:-translate-y-1.5 transition-all duration-300 ease-out">
               {t("sendEmail")}
             </a>
+            <a href="/CV_Gitahadi.pdf" download="CV_Gitahadi.pdf" className="cursor-pointer text-sm md:text-base font-bold border-2 border-text-secondary/20 hover:border-text-primary text-text-primary px-8 py-4 rounded-xl flex items-center justify-center gap-3 hover:-translate-y-1.5 transition-all duration-300 ease-out">
+              Download CV
+            </a>
           </div>
 
           <div className="mt-12 pt-8 border-t border-text-secondary/10">
@@ -93,7 +96,7 @@ export default function Hero() {
               t("networkEngineer"),
               t("fullstackDeveloper"),
               t("ictTeacher"),
-              `${t("gpa")} ${language === "id" ? "3,69" : "3.69"}`,
+              `${t("gpa")} ${language === "id" ? "3,70" : "3.70"}`,
             ].map((stat, statIndex) => (
               <div key={stat} className="floating flex items-center gap-3 bg-background/90 backdrop-blur-md border border-text-secondary/10 p-3 pr-5 rounded-2xl shadow-xl">
                 <span className="bg-text-primary text-background p-2 rounded-xl font-black">{statIndex + 1}</span>
